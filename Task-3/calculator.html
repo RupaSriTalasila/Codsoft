@@ -1,0 +1,105 @@
+﻿<html>
+<head>
+    <style>
+        body{
+            margin: 50px 550px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+        }
+
+        div div {
+            margin: 2px 2px;
+            border: 2px solid black;
+        }
+
+        .a1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .a2 {
+            margin: 1px 1px;
+            border: 1px solid black;
+            width: 397px;
+            height: 40px;
+            background: lightgrey;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a2" id="screen"></div>
+    <div class="container">
+        <button class="a1" id="b1" onclick="sendNum('(')">(</button>
+        <button class="a1" id="b2" onclick="clearScr()">CE</button>
+        <button class="a1" onclick="sendNum(')')">)</button>
+        <button class="a1" onclick="c()">C</button>
+        <button class="a1" onclick="sendNum('1')">1</button>
+        <button class="a1" onclick="sendNum('2')">2</button>
+        <button class="a1" onclick="sendNum('3')">3</button>
+        <button class="a1" onclick="sendNum('+')">+</button>
+        <button class="a1" onclick="sendNum('4')">4</button>
+        <button class="a1" onclick="sendNum('5')">5</button>
+        <button class="a1" onclick="sendNum('6')">6</button>
+        <button class="a1" onclick="sendNum('-')">-</button>
+        <button class="a1" onclick="sendNum('7')">7</button>
+        <button class="a1" onclick="sendNum('8')">8</button>
+        <button class="a1" onclick="sendNum('9')">9</button>
+        <button class="a1" onclick="sendNum('*')">*</button>
+        <button class="a1" onclick="sendNum('.')">.</button>
+        <button class="a1" onclick="sendNum('0')">0</button>
+        <button class="a1" onclick="equalTo()">=</button>
+        <button class="a1" onclick="sendNum('/')">/</button>
+    </div>
+</body>
+<script>
+    var a = '';
+    var b = '';
+    var num = [];
+    var ans;
+    function sendNum(digit) {
+        num.push(digit);
+        if (num.length != 1) {
+            a = '';
+            document.getElementById('screen').innerHTML = a; 
+}
+        for (i = 0; i < num.length; i++) {
+            a = a + num[i];
+        }
+        document.getElementById('screen').innerHTML = a; 
+    }
+    function c() {
+        num.pop();
+        a = '';
+        document.getElementById('screen').innerHTML = a;
+        for (i = 0; i < num.length; i++) {
+            a = a + num[i];
+        }
+        document.getElementById('screen').innerHTML = a;
+    }
+    function equalTo() {
+        document.getElementById('screen').innerHTML = '';
+        for (i = 0; i < num.length; i++) {
+            b += num[i];
+        }
+        ans = eval(b);
+        document.getElementById('screen').innerHTML = ans;
+        while (num.length > 0) {
+            num.pop();
+        }
+        num.push(ans.toString());
+        a = ans;
+    }
+    function clearScr() {
+        document.getElementById('screen').innerHTML = '';
+        while (num.length > 0) {
+            num.pop();
+        }
+        a = '';
+        b = '';
+    }
+</script>
+</html>
