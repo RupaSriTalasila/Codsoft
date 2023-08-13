@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Study Abroad
+    </title>
+    <style type="text/css">
+       header{
+        width:100%;
+        height:100vh;
+        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("studyabroad1.jpg");
+        background-size: cover;
+        font-family:cursive;
+       } 
+       nav{
+        width: 100%;
+        height: 100px;
+        color:black;
+        display: flex;
+       justify-content: space-around;
+       align-items:center;
+    }
+    .logo{
+        font-family: 'Times New Roman', Times, serif;
+        font-size:48px;
+        color: white;
+    }
+    .menu a{
+        text-decoration: none;
+        color:white;
+        padding: 10px 20px;
+        position: relative;
+    }
+    .menu a::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0.4cm;
+        background-color: aqua;
+        border-bottom: 2px red;
+    }
+    .menu a:hover::after{
+        width: 30%;
+    }
+    .signup a{
+        color:white;
+        padding:5px 20px;
+        font-size: medium;
+        background: red;
+    }
+    .signin a{
+        color:white;
+        padding:5px 20px;
+        font-size: medium;
+        background: red;
+    }
+    .sec{
+        max-width: 650px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        text-align:center;
+
+    }
+    .sec span{
+        color:white;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .sec a{
+        color:white;
+        padding:5px 20px;
+        font-size: medium;
+        background: red;
+        text-align: center;
+        
+    }
+    .sec p{
+        color:white;
+    }
+    .sec h1{
+       color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+    }
+    marquee{
+        color:yellow;
+    }
+     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <b style="color: red;">S</b>tudy<b> </b><b style="height: 500px; color: red;"">A</b>broad
+            </div>
+            <div class="menu">
+                <a href="#" >about</a>
+                <a href="#">services</a>
+                <a href="#">success stories</a>
+                <a href="#">contact </a>
+            </div>
+            <div class="signup">
+                <a href="#">sign up</a>
+            </div>
+            <div class="signin">
+                <a href="#">sign in</a>
+            </div>
+        </nav>
+        <marquee>
+            Welcome To StudyAbroad 
+        </marquee>
+        <section class="sec">
+        <span>
+           <b>PLAN-WISE</b>
+        </span>
+        <h1>DREAMING TO<br>
+            STUDY ABROAD</h1>
+        <p>kickstart your carreer with Study Abroad to fulfill your dreams</p>
+        <br>
+        <a href="#">Read More</a>
+        </section>
+    </header>
+    <footer>
+
+    </footer>
+</body>
+</html>
