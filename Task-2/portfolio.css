@@ -1,0 +1,157 @@
+
+header{
+    height: 100vh;
+    width:100% ;
+    background-image: linear-gradient(to right,yellow,violet)
+
+}
+header nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+nav .menu{
+    
+    display: flex;
+    flex-wrap: wrap;
+   justify-content:right;
+   margin-right: 160px;
+}
+.navbar .menu li{
+    list-style: none;
+    margin: 0 10px ;
+    font-size: 30px;
+}
+.menu li a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    
+    
+}
+.menu li a:hover{
+    color:red
+}
+.content{
+position:absolute;
+top:33%;
+left: 7%;
+}
+.content .welcome{
+    font-size: 42px;
+    margin:0;
+    
+}
+.content .text{
+    font-size: 40px;
+    font-style: italic;
+
+}
+.content .name{
+
+font-size: 45px;
+font-style: italic;
+}
+.content .study{
+    font-size: 40px;
+    font-style: italic;
+}
+.content .and{
+    font-size: 30px;
+    font-style: italic;
+}
+.content .image{
+    margin: -220px 850px;
+}
+.aboutpage{
+    border: 1px solid blue;
+    
+    background-image: linear-gradient(yellow,violet);
+    background-size: 10000px 1000px;
+    height: 100vh;
+    width: 100%;
+    
+}
+.links{
+    margin: 0%;
+    top:33%;
+    left: 7%;
+}
+.fa-linkedin{
+    
+    background: #007bb5;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    margin: 3px 3px;
+}
+.fa-github{
+    background: black;
+    color: white;
+    padding: 10px;
+
+}
+.abtimg{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin: -140px 850px;
+}
+.aboutname{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Soc{
+    font-size: 30px;
+    color: red;
+    font-style: oblique;
+}
+.resume{
+    padding: 16px 35px;
+    font-size: 32px;
+    color: red;
+    font-style: italic;
+}
+.resume a{
+    background: skyblue;
+    padding: 16px 35px;
+    text-decoration: none;
+    border: rgb(255,181,0) 1px solid red;
+    border-radius: 35px;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+}
+.resume a:hover{
+    background-color: blue;
+}
+.skillset{
+    height:100vh;
+    width: 100%;
+    background-image: linear-gradient(yellow,violet);
+    font-size: 32px;
+    background-size: 10000px 1000px;
+}
+.skillset .rightsec{
+    background-image: linear-gradient(yellow,violet);
+    margin:-450px 550px ;
+}
+.skillset .leftsec{
+    margin: 0px 50px;
+}
+.contact{
+    height:100px;
+    width:100%;
+    background: whitesmoke;
+    color: white;
+}
+.contact a{
+    border-radius: 90px;
+    height: max-content;
+    width: max-content;
+    background: red;
+    color: white;
+}
